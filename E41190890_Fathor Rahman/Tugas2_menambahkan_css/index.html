@@ -7,27 +7,63 @@
     <style>
         table {
           border-collapse: collapse;
-          border: 1px solid black;
+          border: 1.5px solid black;
         }
+
+        .button {
+        background-color: #ff3300;
+        border: none;
+        color: white;
+        padding: 10px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        }
+
+        .monospace {
+        font-family: "Lucida Console", Courier, monospace;
+        }
+        .sansserif {
+        font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input[type=text],[type=password], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+
+    
+        body {
+        background-color: lightblue;
+        }
+
     </style>
 </head>
 <body >
     <form action="target.html">
-        <table  align="center" cellpadding="5" cellspacing="0" >
+        <table  align="center" cellpadding="0" cellspacing="0" >
             <tr>
-                <th align="center" colspan="3"><h3>FORM DATA KASIR</h3></th>
+                <th class="monospace" align="center" colspan="3"><h3>FORM DATA KASIR</h3></th>
             </tr>
-            <tr>
+            <tr class="sansserif" >
                 <td style="width: 45%;">ID KASIR</td>
                 <td>:</td>
                 <td><input type="text" name="id" placeholder="ID"></td>
             </tr>
-            <tr>
+            <tr class="sansserif">
                 <td>NAMA KASIR</td>
                 <td>:</td>
                 <td><input type="text" name="nama" placeholder="NAMA"></td>
             </tr>
-            <tr>
+            <tr class="sansserif">
                 <td>ALAMAT KASIR</td>
                 <td>:</td>
                 <td><select name="alamat" id="">
@@ -37,31 +73,31 @@
                     </select>
                 </td>
             </tr>
-            <tr>
+            <tr class="sansserif">
                 <td>TELPON KASIR</td>
                 <td>:</td>
                 <td><input type="text" name="telp" placeholder="Telp"></td>
             </tr>
-            <tr>
+            <tr class="sansserif">
                 <td>STATUS</td>
                 <td>:</td>
                 <td>
-                    <input type="radio" name="gender" id="pria">PRIA
-                    <input type="radio" name="gender" id="wanita">WANITA
+                    <input type="radio" name="gender" id="pria">pria
+                    <input type="radio" name="gender" id="wanita">wanita
                 </td>
             </tr>
-            <tr>
+            <tr class="sansserif">
                 <td>USERNAME</td>
                 <td>:</td>
                 <td><input type="text" name="username" placeholder="Username"></td>
             </tr>
-            <tr>
+            <tr class="sansserif">
                 <td>PASSWORD</td>
                 <td>:</td>
                 <td><input type="password" name="password" placeholder="Password"></td>
             </tr>
-            <tr>
-                <td align="center"><button type="submit" value="kirim" >kirim</button></td>
+            <tr class="sansserif">
+                <td align="center"><button class="button" type="submit" value="kirim" >kirim</button></td>
                 <td></td>
                 <td></td>
             </tr>
