@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Data Kasir</title>
+	<style>
+		
+        table {
+          border-collapse: collapse;
+          border: 1px solid black;
+        }
+    
+        table {
+          border-collapse: collapse;
+          border: 1px solid black;
+        }
+
+		.button {
+  background-color: #00008B; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+  .input[type=text] [type=password], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.monospace {
+  font-family: "Lucida Console", Courier, monospace;
+}
+	</style>
+</head>
+<body bgcolor="black">
+
+<form action="#" method="get">
+	<table align="center" bgcolor="sky blue">
+		<tr>
+			<td></td>
+		</tr>
+		<tr>
+			<td>
+                
+				<fieldset>
+					<h2 align="center">FORM DATA KASIR</h2>
+					<table align="center" cellspacing="1" cellpadding="5">
+					  <tr class="monospace">
+					   <td>ID KASIR</td>
+					   <td>:</td>
+					   <td>
+					   		<input type="text" name="id_kasir" value="ID">
+					   	</td>
+					  </tr>
+					  <tr class="monospace">
+					   <td>NAMA KASIR</td>
+					   <td>:</td>
+					   <td>
+					   		<input type="text" name="nama_kasir" value="NAMA">
+					   	</td>
+					  </tr>
+					  <tr class="monospace">
+					   <td>ALAMAT KASIR</td>
+					   <td>:</td>
+					   <td>
+					   		<select name="alamat">
+								   <option 
+								   selected> 
+								   JEMBER
+								   </option>
+								   <option 
+								   selected>
+								   SITUBONDO
+								   </option>
+					   		</select>
+					   	</td>
+					  </tr>
+					  <tr class="monospace">
+					   <td>TELEPON KASIR</td>
+					   <td>:</td>
+					   <td>
+					   		<input type="text" name="nama_kasir" value="+62 ">
+					   	</td>
+					  </tr>
+					  <tr class="monospace">
+					   <td>STATUS</td>
+					   <td>:</td>
+					   <td>
+					   		<input type="radio" name="JK" value="Laki-laki">PRIA
+					    	<input type="radio" name="JK" value="Perempuan">WANITA
+					   </td>
+					  </tr>
+					  <tr class="monospace">
+					   <td>USERNAME</td>
+					   <td>:</td>
+					   <td>
+					   		<input type="text" name="nama_kasir" value="Username">
+					   	</td>
+					  </tr>
+					  <tr class="monospace">
+					   <td>PASSWORD</td>
+					   <td>:</td>
+					   <td>
+					   		<input type="password" name="nama_kasir" value="Username">
+					   	</td>
+					  </tr>
+					  <tr class="monospace">
+					   	<td colspan="2">
+					   		<button class="button" type="submit" value="kirim">kirim</button>
+					   	</td>
+					  </tr>
+					</table>
+				</fieldset>
+			</td>
+		</tr>
+		<tr>
+			<td></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>

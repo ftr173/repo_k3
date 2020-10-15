@@ -1,0 +1,21 @@
+h1{
+    color: peru;
+    font-family: fantasy;
+    text-align: center;
+}
+
+.kotak{
+    padding: 50px;
+    width: 100px;
+    color: #fff;
+    margin: 10px;
+    background: red;
+
+}
+
+#kotak{
+    width: 400px;
+    color: #fff;
+    background: seagreen;
+    padding: 50px;
+}

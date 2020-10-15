@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Belajar HTML</title>
+    <style>
+        table{
+            border-collapse: collapse;
+            border: 1.5px solid black;
+        }
+        .button {
+        background-color:#003366;
+        border: none;
+        color: white;
+        padding: 5px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        }
+        .monospace {
+        font-family: "Lucida Console", Courier, monospace;
+        }
+        body {
+        background-color: lightblue;
+        }
+        input[type=text],[type="password"], select {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="target.html">
+        <table align="center" cellpadding="5" cellspacing="0">
+            <tr>
+                <th class="monospace"  align="center" colspan="3"><h3>FORM DATA KASIR</h3></th>
+            </tr>
+            <tr>
+                <td class="monospace" style="width: 45%;">ID KASIR</td>
+                <td>:</td>
+                <td><input class="monospace" type="text" name="id" placeholder="ID"></td>
+            </tr>
+            <tr>
+                <td  class="monospace">NAMA KASIR</td>
+                <td>:</td>
+                <td><input class="monospace" type="text" name="nama" placeholder="NAMA"></td>
+            </tr>
+            <tr>
+                <td  class="monospace">ALAMAT KASIR</td>
+                <td>:</td>
+                <td><select class="monospace" name="alamat" id="">
+                    <option class="monospace" value="jember">JEMBER</option>
+                    <option class="monospace" value="sumenep">SUMENEP</option>
+                    <option class="monospace" value="pamekasan">PAMEKASAN</option>
+                    <option class="monospace" value="surabaya">SURABAYA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="monospace">TELEPON KASIR</td>
+                <td>:</td>
+                <td><input class="monospace" type="text" name="telp" placeholder="Telp"></td>
+            </tr>
+            <tr>
+                <td class="monospace">STATUS</td>
+                <td>:</td>
+                <td class="monospace">
+                    <input type="radio" name="jeniskelamin" id="pria">PRIA
+                    <input type="radio" name="jeniskelamin" id="wanita">WANITA
+                </td>
+            </tr>
+            <tr>
+                <td class="monospace">USERNAME</td>
+                <td>:</td>
+                <td><input class="monospace" type="text" name="username" placeholder="UserName"></td>
+            </tr>
+            <tr>
+                <td class="monospace">PASSWORD</td>
+                <td>:</td>
+                <td><input class="monospace" type="password" name="password" placeholder="*******"></td>
+            </tr>
+            <tr>
+                <td  class="monospace" align="center"><input  class="button" type="submit" value="KIRIM"></td>
+                <td></td>
+                <td></td>
+                
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
