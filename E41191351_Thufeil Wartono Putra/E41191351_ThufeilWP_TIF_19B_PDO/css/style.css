@@ -1,0 +1,33 @@
+body {
+    background-image: linear-gradient(to right, #06c1d6, #A03FD8);
+    background-size: cover;
+}
+
+/* .container {
+    background-image: url(login.jpg);
+    background-size: 50%;
+} */
+.row {
+    background-image: url(login.jpg);
+}
+
+h1 {
+    text-align: center;
+    margin-top: -200px;
+}
+
+.login-form {
+    background: #005cb37a;
+    padding: 300px;
+    color: rgb(197, 197, 197);
+}
+
+.login-heading {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-primary {
+    width: 100%;
+    border-radius: 30px;
+}
